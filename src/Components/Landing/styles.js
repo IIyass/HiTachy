@@ -165,7 +165,7 @@ h1{
     }
 
     h4{
-      width:282.95px;
+      width:300px;
       ${UI_UX};
       ${RightAnimation};
       padding-left:45px;
