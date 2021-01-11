@@ -155,6 +155,15 @@ h1{
       #pattern2{
         bottom:130px;
       }
+
+      #union{
+        position:absolute;
+        width: 173.97px;
+        height: 200.56px;
+        left:30%;
+        bottom:100px;
+        
+      }
          
     h2{    
       position:absolute;
@@ -188,6 +197,7 @@ font-weight: 700;
 font-size: 56px;
 line-height: 100px;
 color: #53A8CB;
+margin-top:-90px;
 ${RightAnimation};
 }
 

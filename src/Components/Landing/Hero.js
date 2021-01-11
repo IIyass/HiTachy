@@ -34,7 +34,9 @@ const Landing = (props) => {
                     <img alt="pattern" src={pattern3} />
                     <h2>Ul</h2>
                 </div>
-                <img alt="union" src={union} />
+                <div className="pattern">
+                    <img alt="union" id="union" src={union} />
+                </div>
                 <div className="pattern">
                     <img alt="pattern" id="pattern2" src={pattern2} />
                     <h4>UX</h4>
