@@ -29,9 +29,6 @@ const Header = () => {
       <Link to="/">
         <img alt="logo" src={Logo} />
       </Link>
-      <Link to="/">
-        <img alt="logo" src={Intouch} />
-      </Link>
     </Style.Logo>
     <ul>
       <Link to="/"><li> Home</li></Link>

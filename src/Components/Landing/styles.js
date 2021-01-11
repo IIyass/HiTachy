@@ -80,6 +80,8 @@ height:100vh;
 margin:auto;
 width:100%;
 
+ 
+
 .imageContainer{
   display:flex;
   width: 59.99px;
@@ -93,7 +95,7 @@ width:100%;
       display:flex;
       flex-direction:row;
       width:max-content;
-      margin-left:85px;
+      margin-left:0px;
 
       img{
         width: 80%;
@@ -113,8 +115,12 @@ width:100%;
     height: 50%;
     margin:auto;
   }
+  #finalPattern{
+    width: 354.94px;
+    height: 85px;
+  }
 }
-
+ 
 
 h1{
   font-family: Gotham;
@@ -135,16 +141,36 @@ h1{
     align-items:center;
     justify-content:space-between;
 
-    h2{
+
+    .pattern{
+      width:275.95px;
+      height:276px;
+      position:relative;
+      img{
+        width:100%;
+        height:100%;
+        position:absolute;
+      }
+
+      #pattern2{
+        bottom:130px;
+      }
+         
+    h2{    
+      position:absolute;
+      width:225px;
+      right:0;
       ${LeftAnimation};
       ${UI_UX}; 
     }
-     
+
     h4{
+      width:282.95px;
       ${UI_UX};
       ${RightAnimation};
+      padding-left:45px;
     }
-
+  }
     img{
       width: 164.84px;
       height: 195.98px;
