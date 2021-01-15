@@ -9,14 +9,18 @@ import pattern from '../../illustrations/Pattern.svg'
 import pattern2 from '../../illustrations/bluePattern.svg';
 import pattern3 from '../../illustrations/redPattern.svg';
 import pattern4 from '../../illustrations/finalPattern.svg';
-import GlobalFonts from '../../fonts/fonts'
+import scroll from '../../illustrations/Scroll.svg';
+import vector from '../../illustrations/Vector.svg';
+import GlobalFonts from '../../fonts/fonts';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const Landing = (props) => {
-    console.log(GlobalFonts)
+
     return <HeroWrapper as={Wrapper}>
         <GlobalFonts />
         <div id="container">
             <div id="socialTop">
-                <img alt="pattern" src={pattern} />
+                <img id="firstPattern" alt="pattern" src={pattern} />
                 <a href="https://dribbble.com/">
                     <div className="imageContainer">
                         <img alt="dribble" src={Dribble} />
@@ -44,7 +48,6 @@ const Landing = (props) => {
             </div>
             <h3>DESIGN LAB</h3>
             <div id="socialBottom">
-
                 <a href="https://www.linkedin.com/">
                     <div className="imageContainer">
                         <img alt="linkdin" id="linImage" src={Linkdin} />
@@ -53,6 +56,10 @@ const Landing = (props) => {
                 <img alt="pattern" id="finalPattern" src={pattern4} />
             </div>
         </div>
+        <AnchorLink href="#ourProject" id="scroll">
+            <img src={scroll} alt="scroll" />
+            <img alt="vector" id="vector" src={vector} />
+        </AnchorLink>
     </HeroWrapper>
 }
 export default React.memo(Landing);

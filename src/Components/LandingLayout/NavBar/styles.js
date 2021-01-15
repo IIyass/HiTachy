@@ -7,7 +7,7 @@ font-family:Roboto;
 justify-content:space-between;
 background-color:#fff;
 align-items:center;
-height:100px;
+height:10vh;
 
 ul{
     width:250px;

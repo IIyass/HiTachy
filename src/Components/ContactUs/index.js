@@ -1,6 +1,8 @@
-import React from 'react'
-import { ContactUsHeaderWrapper, ContactUsFooterWrapper } from './style'
-import Group4 from '../../illustrations/Group4.svg'
+import React from 'react';
+import { ContactUsHeaderWrapper, ContactUsFooterWrapper } from './style';
+import Group4 from '../../illustrations/Group4.svg';
+import Budget from './budget.json';
+import Service from './service.json';
 
 const ContactUs = () => {
     return (
@@ -11,14 +13,14 @@ const ContactUs = () => {
                         <h1> Discover What Service can do for you</h1>
                         <p> Let’s Talk</p>
                         <select   >
-                            <option>Choose Service</option>
-                            <option>Service one</option>
-                            <option>Service two</option>
+                            {Service.map((e) => {
+                                return <option>{e.label}</option>
+                            })}
                         </select>
                         <select   >
-                            <option>Choose Budget</option>
-                            <option>Budget one</option>
-                            <option>Budget two</option>
+                            {Budget.map((e) => {
+                                return <option>{e.label}</option>
+                            })}
                         </select>
                         <div className="row">
                             <input placeholder="Full Name" />

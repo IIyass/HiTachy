@@ -74,14 +74,33 @@ const UI_UX = css`
 
 export const HeroWrapper = styled.div`
 display:flex;
-height:100vh;
+height:90vh;
+flex-direction:column;
+align-items:center;
+min-height:90vh;
+
+#scroll{
+  display:flex;
+  flex-direction:column;
+  cursor:pointer;
+  align-items:center;
+  margin-bottom:25px;
+  img{
+    width: 29.99px;
+    height: 60px;
+  }
+  #vector{
+    width: 20px;
+    height: 8px;
+  }
+}
 
 #container{
 margin:auto;
 width:100%;
-
+display:flex;
+flex-direction:column;
  
-
 .imageContainer{
   display:flex;
   width: 59.99px;
@@ -96,7 +115,10 @@ width:100%;
       flex-direction:row;
       width:max-content;
       margin-left:0px;
-
+      #firstPattern{
+        width:85px;
+        height:85px;
+      }
       img{
         width: 80%;
         height: 80%;
@@ -119,6 +141,7 @@ width:100%;
     width: 354.94px;
     height: 85px;
   }
+ 
 }
  
 
@@ -203,10 +226,6 @@ ${RightAnimation};
 
 }
 `;
-
-
-
-
 export const ProjectWrapper = styled.div`
 background-color: #F3F3F3;
 

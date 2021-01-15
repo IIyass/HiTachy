@@ -8,7 +8,7 @@ import project3 from '../../illustrations/CIOWebsite.svg'
 
 
 const Project = (props) => {
-    return <ProjectWrapper >
+    return <ProjectWrapper id="ourProject"   >
         <ProjectContainer as={Wrapper}>
             <div className="OneProject">
                 <h1>Our Projects</h1>
