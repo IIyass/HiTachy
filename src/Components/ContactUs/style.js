@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import vector from '../../illustrations/Polygon.svg';
 
 export const ContactUsHeaderWrapper = styled.div`
 background-color:#DDDDDD;
@@ -65,6 +65,15 @@ background-color:#DDDDDD;
         select{
             color:#9B9B9B;
             cursor:pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance:none;
+            background: url(${vector});
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-size:15px;
+            background-position-y: 25px;
+           
         }
         input,select{
             height:60px;
