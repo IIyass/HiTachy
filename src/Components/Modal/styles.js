@@ -43,7 +43,14 @@ export const Modal = styled.div`
   height: 100vh;
   animation: ${ModalFadeInKeyframes} 250ms linear;
   overflow-x: hidden;
- 
+  margin-top:150px;
+  scrollbar-width: none; /* Firefox */
+ -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+ ::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
 
   .content {
     padding: 30px 80px;

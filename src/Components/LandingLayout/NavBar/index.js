@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as Style from './styles';
 import Logo from '../../../illustrations/footerlogo.svg';
 import Intouch from '../../../illustrations/iN-TouchLab.svg'
+import { Wrapper } from '../../../Common/Layout';
 import { useLocation } from 'react-router-dom'
 const Header = () => {
 
@@ -24,7 +25,7 @@ const Header = () => {
     }
   }, [location.pathname])
 
-  return <Style.Wrapper position={position}>
+  return <Style.Wrapper as={Wrapper} position={position}>
     <Style.Logo>
       <Link to="/">
         <img alt="logo" src={Logo} />

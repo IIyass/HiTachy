@@ -8,6 +8,7 @@ justify-content:space-between;
 background-color:#fff;
 align-items:center;
 height:10vh;
+ 
 
 ul{
     width:250px;
@@ -17,7 +18,7 @@ ul{
     justify-content:space-between;
     padding:0;
     margin:0;
-    margin-right:120px;
+  
     
     a{
         font-weight: bold;
@@ -33,7 +34,7 @@ ul{
 `;
 
 export const Logo = styled.div`
-margin-left:120px;
+ 
 width :270px;
 height: 50px;
 display:flex;
